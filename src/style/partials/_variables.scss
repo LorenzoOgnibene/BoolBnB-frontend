@@ -1,0 +1,48 @@
+$primary-purple: #6962e9;
+$secondary-purple: #7089f5;
+$light-purple: #778deb;
+$opacity-purple: rgba(119, 140, 235, 0.432);
+
+$red-error: rgb(97, 19, 19);
+
+
+
+
+
+
+
+
+
+
+//MIXIN
+
+@mixin button-primary{
+    background-color: $primary-purple;
+    color: white;
+    &:hover{
+        background-color: $light-purple;
+        color: white;
+        transition: all 0.7s ease;
+    }
+}
+
+@mixin button-secondary{
+    background-color: $secondary-purple;
+    color: white;
+    &:hover{
+        background-color: $light-purple;
+        color: white;
+        transition: all 0.7s ease;
+    }
+}
+
+
+@mixin button-outline{
+    background-color: $opacity-purple;
+    border: 1px solid $primary-purple;
+    color: white;
+    &:hover{
+        background-color: $light-purple;
+        transition: all 0.7s ease;
+    }
+}
